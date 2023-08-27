@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>GMC Motors / Iventory</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="telephone=no" name="format-detection">
+      <meta name="HandheldFriendly" content="true">
+      <link rel="stylesheet" href="assets/css/master.css">
+     
+      <link rel="icon" type="image/x-icon" href="favicon.ico"><!--[if lt IE 9 ]>
+<script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
+<![endif]-->
+  </head>
+  <body class="page">
+      <!-- Loader-->
+      <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+      <!-- Loader end-->
+    <div class="l-theme animated-css" data-header="sticky" data-header-top="200" data-canvas="container">
+       
+      <!-- ==========================-->
+      <!-- SEARCH MODAL-->
+      <!-- ==========================-->
+      <div class="header-search open-search">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 offset-sm-2 col-10 offset-1">
+              <div class="navbar-search">
+                <form class="search-global">
+                  <input class="search-global__input" type="text" placeholder="Type to search" autocomplete="off" name="s" value=""/>
+                  <button class="search-global__btn"><i class="icon stroke icon-Search"></i></button>
+                  <div class="search-global__note">Begin typing your search above and press return to search.</div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="search-close close" type="button"><i class="fa fa-times"></i></button>
+      </div>
+      <!-- ==========================-->
+      <!-- MOBILE MENU-->
+      <!-- ==========================-->
+      <div data-off-canvas="mobile-slidebar left overlay">
+
+        <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                      
+                      
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"> <a href="stock.html" class="nav-link" >Stock List</a>
+                   
+                    
+                    </li>
+                    <!-- <li  class="nav-item"><a class="nav-link"  href="inventory-grid.html">Part Exchange</a></li> -->
+                    <li  class="nav-item"><a class="nav-link" href="DeliverCars.html">We Deliver Cars</a></li>
+                    <li  class="nav-item"><a class="nav-link" href="Warranty.html">Warranty</a></li>
+                      
+                    <li class="nav-item"><a class="nav-link" href="about.html"> Sell Your Car</a></li>                     
+                    <!-- <li  class="nav-item"><a class="nav-link" href="Reviews.html">Reviews</a></li> -->
+                  <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                  </ul>
+
+      </div>
+   
+        
+      <header class="header">
+        <div class="top-bar">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <div class="top-bar__item"><i class="ic fas fa-map-marker-alt text-primary"></i>
+                   Call Us 24/7!<a class="top-bar__link" href="tel:+447849494982"> +447849494982</a>
+                </div>
+                <div class="top-bar__item"><i class="ic fas fa-envelope text-primary"></i> Email<a class="top-bar__link" href="mailto:gtsltd11@gmail.com"> gtsltd11@gmail.com</a></div>
+                <div class="top-bar__item"><i class="ic fas fa-clock text-primary"></i> Opening Hours
+                  
+                  <span class="top-bar__link">Mon  to Fri : 9:00am to 6:00pm</span>
+                </div>
+              </div>
+              <!-- <div class="col-auto">
+                <ul class="header-soc list-unstyled">
+                  <li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
+                  <li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-behance"></i></a></li>
+                  <li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook-f"></i></a></li>
+                  <li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-instagram"></i></a></li>
+                  <li class="header-soc__item"><a class="header-soc__link" href="#" target="_blank"><i class="ic fab fa-youtube"></i></a></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="header-main">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto"><a class="navbar-brand navbar-brand_light scroll" href="home.html"><img class="normal-logo img-fluid" src="assets/media/general/logo-light.png" alt="logo"/></a><a class="navbar-brand navbar-brand_dark scroll" href="home.html"><img class="normal-logo img-fluid" src="assets/media/general/logo-dark.png" alt="logo"/></a></div>
+              <div class="col-auto d-xl-none">
+                <!-- Mobile Trigger Start-->
+                <button class="menu-mobile-button js-toggle-mobile-slidebar toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                <!-- Mobile Trigger End-->
+              </div>
+              <div class="col-xl d-none d-xl-block">
+                <nav class="navbar navbar-expand-lg justify-content-end" id="nav">
+                  <ul class="yamm main-menu navbar-nav">
+                    <!-- <li class="nav-item active"><a class="nav-link dropdown-toggle" href="home.html">Home</a> -->
+                      <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                      <li class="nav-item"> <a href="stock.html" class="nav-link" >Stock List</a>
+               
+                     
+                      
+                      </li>
+                      <!-- <li  class="nav-item"><a class="nav-link"  href="inventory-grid.html">Part Exchange</a></li> -->
+                      <li  class="nav-item"><a class="nav-link" href="DeliverCars.html">We Deliver Cars</a></li>
+                      <li  class="nav-item"><a class="nav-link" href="Warranty.html">Warranty</a></li>
+                        
+                      <li class="nav-item"><a class="nav-link" href="about.html"> Sell Your Car</a></li>                     
+                      <!-- <li  class="nav-item"><a class="nav-link" href="Reviews.html">Reviews</a></li> -->
+            
+                  </ul>
+                    <!-- <a class="header-main__link" href="home.html"><i class="ic icon-user"></i></a> -->
+                    <!-- <span class="header-main__link btn_header_search"><i class="ic icon-magnifier"></i></span> -->
+                  <!-- <button class="header-main__btn btn btn-secondary">Take a test drive</button> -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end .header-->
+      <div class="section-title-page area-bg area-bg_dark area-bg_op_60">
+        <div class="area-bg__inner">
+          <div class="container text-center">
+            <h1 class="b-title-page">Inventory</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Inventory</li>
+              </ol>
+            </nav>
+            <!-- end .breadcrumb-->
+            
+          </div>
+        </div>
+      </div>
+      <!-- end .b-title-page-->
+      
+      <div class="l-main-content">
+        <div class="ui-decor ui-decor_mirror ui-decor_sm-h bg-primary"></div>
+        <div class="container">
+          <div class="row">
+            <!-- <div class="col-xl-3">
+              <aside class="l-sidebar l-sidebar_top_minus">
+                <div class="widget section-sidebar bg-gray">
+                  <h3 class="widget-title row justify-content-between align-items-center no-gutters"><span class="widget-title__inner col">Search Options</span><i class="ic flaticon-car-repair col-auto"></i></h3>
+                  <div class="widget-content">
+                    <div class="widget-inner">
+                      <form class="b-filter">
+                        <div class="b-filter__main row">
+                          <div class="b-filter__row col-xl-12 col-md-6">
+                            <select class="selectpicker" data-width="100%" title="Select Make" multiple="multiple" data-max-options="1" data-style="ui-select">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                            </select>
+                          </div>
+                          <div class="b-filter__row col-xl-12 col-md-6">
+                            <select class="selectpicker" data-width="100%" title="Select Model" multiple="multiple" data-max-options="1" data-style="ui-select">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                            </select>
+                          </div>
+                          <div class="b-filter__row col-xl-12 col-md-6">
+                            <select class="selectpicker" data-width="100%" title="Vehicle Type" multiple="multiple" data-max-options="1" data-style="ui-select">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                            </select>
+                          </div>
+                          <div class="b-filter__row col-xl-12 col-md-6">
+                            <select class="selectpicker" data-width="100%" title="Condition" multiple="multiple" data-max-options="1" data-style="ui-select">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                            </select>
+                          </div>
+                          <div class="col-12">
+                            <div class="b-filter__row row">
+                              <div class="b-filter__item col-md-6">
+                                <select class="selectpicker" data-width="100%" title="From" multiple="multiple" data-max-options="1" data-style="ui-select">
+                                  <option>Select 1</option>
+                                  <option>Select 2</option>
+                                  <option>Select 3</option>
+                                  <option>Select 4</option>
+                                </select>
+                              </div>
+                              <div class="b-filter__item col-md-6">
+                                <select class="selectpicker" data-width="100%" title="To" multiple="multiple" data-max-options="1" data-style="ui-select">
+                                  <option>Select 1</option>
+                                  <option>Select 2</option>
+                                  <option>Select 3</option>
+                                  <option>Select 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="b-filter__row col-xl-12 col-md-6">
+                            <select class="selectpicker" data-width="100%" title="Transmission" multiple="multiple" data-max-options="1" data-style="ui-select">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                            </select>
+                          </div>
+                          <div class="b-filter__row col-xl-12 col-md-6">
+                            <select class="selectpicker" data-width="100%" title="Fuel Type" multiple="multiple" data-max-options="1" data-style="ui-select">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="b-filter-slider ui-filter-slider">
+                          <div class="b-filter-slider__title">Price</div>
+                          <div class="b-filter-slider__main">
+                            <div id="filterPrice"></div>
+                            <div class="b-filter__row row">
+                              <div class="b-filter__item col-md-6">
+                                <input class="ui-select" id="input-with-keypress-0"/>
+                              </div>
+                              <div class="b-filter__item col-md-6">
+                                <input class="ui-select" id="input-with-keypress-1"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="b-filter-slider ui-filter-slider">
+                          <div class="b-filter-slider__title">Search radius</div>
+                          <div class="b-filter-slider__main">
+                            <div id="sliderRange"></div>
+                            <div class="b-filter__row">
+                              <input class="ui-select" id="input-range"/>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="b-filter__reset btn btn-secondary w-100" type="reset">reset filters</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                 
+                
+              </aside>
+            </div> -->
+            <div class="col-xl-12">
+              <!-- <div class="b-filter-goods">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-md-auto">
+                    <div class="b-filter-goods__info">Showing results<strong> 1 to 10</strong>
+                       of total 56
+                    </div>
+                  </div>
+                  <div class="col-md-auto">
+                    <div class="b-filter-goods__wrap">
+                      <div class="b-filter-goods__select">
+                        <select class="selectpicker" data-width="210px" title="Sort by Newest First" multiple="multiple" data-max-options="1" data-style="ui-select">
+                          <option>A-Z</option>
+                          <option>Z-A</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="btns-switch"><i class="btns-switch__item js-view-list active ic fas fa-list"></i><i class="btns-switch__item js-view-th ic fas fa-th-large"></i></div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- end .b-filter-goods-->
+              
+              <div class="b-goods-group row" id="dynamicContentContainer">
+                
+              </div>
+              <div id="paginationContainer" class="pagination justify-content-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <footer class="footer">
+          <div class="footer__figure"><img class="img-fluid" src="assets/media/content/footer/figure-1.png" alt="foto"></div>
+          <div class="footer__decor"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-section"><a class="footer__logo" href="index.html"><img class="img-fluid" src="assets/media/general/logo-light.png" alt="Logo"></a>
+                  <div class="footer-info">GMC Motors is a leading automotive company dedicated to providing high-quality vehicles and exceptional customer experiences. We are committed to innovation, design excellence, and delivering reliable vehicles that meet the diverse needs of our customers.</div>
+                </div>
+                <!-- <section class="footer-section">
+                  <h3 class="footer-section__title footer-section__title_sm">Subscribe Newsletter</h3>
+                  <form class="footer-form">
+                    <div class="form-group">
+                      <input class="footer-form__input form-control" type="email" placeholder="your email"><i class="ic far fa-envelope-open"></i>
+                    </div>
+                  </form>
+                </section> -->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <section class="footer-section pl-4">
+                  <h3 class="footer-section__title">Dealer Information</h3>
+                  <div class="footer-hours">
+                    <div class="footer-hours__title">Sales Hours</div>
+                    <div class="footer-hours__info">Mon - Fri:  09:00 am to 06:00 pm</div>
+                    <div class="footer-hours__info">Sat: 10:00am to 05:00 pm</div>
+                  </div>
+                  <div class="footer-hours">
+                    <div class="footer-hours__title">Service Hours</div>
+                    <div class="footer-hours__info">Mon - Fri:  09:00 am to 06:00 pm</div>
+                    <div class="footer-hours__info">Sat: 10:00am to 05:00 pm</div>
+                  </div>
+               
+                </section>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <section class="footer-section footer-section_link pl-4">
+                  <h3 class="footer-section__title">About GMC Motors</h3>
+                  <ul class="footer-list list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & condition</a></li>
+                    <li><a href="Disclaimer.html">Disclaimer</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <section class="footer-section">
+                  <h3 class="footer-section__title">Get In Touch</h3>
+                  <div class="footer-contacts">
+                    <div class="footer-contacts__item"><i class="ic icon-location-pin"></i>95 Reddings Lane Birmingham B11 3EX</div>
+                    <div class="footer-contacts__item"><i class="ic icon-envelope"></i><a href="mailto:gtsltd11@gmail.com">gtsltd11@gmail.com</a></div>
+                    <div class="footer-contacts__item"><i class="ic icon-earphones-alt"></i> Phone:
+                      
+                      <a class="footer-contacts__phone" href="tel:+447849494982">+447849494982</a>
+                    </div>
+                  </div>
+                  <!-- <ul class="footer-soc list-unstyled">
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-behance"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook-f"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-instagram"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-youtube"></i></a></li>
+                  </ul> -->
+                  <!-- <a class="btn btn-white" href="#">Take a test drive</a> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">(c) 2019 GMC Motors - Auto Dealer . All rights reserved.</div>
+          </div>
+        </footer>
+        <!-- .footer-->
+    </div>
+    <!-- end layout-theme-->
+    
+    
+     <!-- ++++++++++++-->
+    <!-- MAIN SCRIPTS-->
+    <!-- ++++++++++++-->
+    <script src="assets/libs/jquery-3.3.1.min.js" ></script>
+    <script src="assets/libs/jquery-migrate-1.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/plugins/popever/popper.min.js" ></script>
+    <script src="assets/libs/bootstrap-4.1.3/js/bootstrap.min.js" ></script>
+    <!---->
+    <!-- Color scheme-->
+    <script src="assets/plugins/switcher/js/dmss.js"></script>
+    <!-- Select customization & Color scheme-->
+    <script src="assets/libs/bootstrap-select.min.js"></script>
+    <!-- Pop-up window-->
+    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Headers scripts-->
+    <script src="assets/plugins/headers/slidebar.js"></script>
+    <script src="assets/plugins/headers/header.js"></script>
+    <!-- Mail scripts-->
+    <script src="assets/plugins/jqBootstrapValidation.js"></script>
+    <script src="assets/plugins/contact_me.js"></script>
+    <!-- Progress numbers-->
+    <script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="assets/plugins/rendro-easy-pie-chart/jquery.waypoints.min.js"></script>
+    <!-- Animations-->
+    <script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
+    <!-- Scale images-->
+    <script src="assets/plugins/ofi.min.js"></script>
+    <!-- Slider number-->
+    <script src="assets/plugins/noUiSlider/wNumb.js"></script>
+    <script src="assets/plugins/noUiSlider/nouislider.min.js"></script>
+    <!-- User customization-->
+    <script src="assets/js/custom.js"></script>
+    <script src="api/config.js"></script>
+
+
+    <script>
+ function createPaginationButtons(totalPages, currentPage) {
+  // Clear existing pagination buttons
+  $('#paginationContainer').empty();
+
+  // Calculate start and end page for visible pagination buttons
+  let startPage, endPage;
+  if (totalPages <= 5) {
+    startPage = 1;
+    endPage = totalPages;
+  } else {
+    if (currentPage <= 3) {
+      startPage = 1;
+      endPage = 5;
+    } else if (currentPage + 1 >= totalPages) {
+      startPage = totalPages - 4;
+      endPage = totalPages;
+    } else {
+      startPage = currentPage - 2;
+      endPage = currentPage + 2;
+    }
+  }
+
+  // Create "Previous" button
+  if (currentPage > 1) {
+    $('#paginationContainer').append(`<span class="page-item"><button class="paginationButton page-link" data-page="${currentPage - 1}">Prev</button></span>`);
+  }
+
+  // Create buttons for each page within the range
+  for (let i = startPage; i <= endPage; i++) {
+    const button = `<span class="page-item ${i === currentPage ? 'active' : ''}"><button class="paginationButton page-link" data-page="${i}">${i}</button></span>`;
+    $('#paginationContainer').append(button);
+  }
+
+  // Create "Next" button
+  if (currentPage < totalPages) {
+    $('#paginationContainer').append(`<span class="page-item"><button class="paginationButton page-link" data-page="${currentPage + 1}">Next</button></span>`);
+  }
+
+   $('#paginationContainer').on('click', '.paginationButton', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const nextPage = parseInt($(this).attr('data-page'));
+    if (!isNaN(nextPage)) {
+      stockList(nextPage);
+    }
+  });
+}
+
+   function stockList(pageNumber = 1) {
+      
+      const url = `${baseUrl}/stocks-data?page=${pageNumber}`;
+
+      fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Network response was not ok (${response.status} ${response.statusText})`);
+          }
+          return response.json();
+        })
+        .then(responseData => {
+          const data = responseData.data; // Assuming that the array is nested within a "data" property
+
+          $('#dynamicContentContainer').empty(); // Clear existing content
+
+         
+          var image = '';
+          data.forEach(element => {
+            if (0 in element.media.images) {
+              image = element.media.images[0]['href'];
+            }
+
+            // Generate HTML content using the retrieved data
+            $('#dynamicContentContainer').append(`
+                    <div class="col-12">
+                    <div class="b-goods b-goods_list"><a class="b-goods__img" href="${(siteUrl)}/vehicle-detailsNew.html?stock=${element.metadata.stockId}"><img class="img-scale" src="${image ? image : 'assets/media/content/b-goods/270x180/1.jpg'}" alt="photo"/><span class="b-goods__label b-goods__label_blue">NEW</span></a>
+                      <div class="b-goods__main">
+                        <div class="row no-gutters">
+                          <div class="col"><a class="b-goods__title" href="${(siteUrl)}/vehicle-detailsNew.html?stock=${element.metadata.stockId}"><span>${(element.vehicle.make ? element.vehicle.make : '')}</span><span>${(element.vehicle.model ? ', ' + element.vehicle.model : '')}</span><span>${(element.vehicle.generation ? ', ' + element.vehicle.generation : '')}</span></a>
+                            <div class="b-goods__info"><span>${element.vehicle.doors ? ' - '+ element.vehicle.doors + ' doors' : ''}</span><span>${element.vehicle.standard.colour ? ', '+ element.vehicle.standard.colour : ''}</span><span>${element.vehicle.badgeEngineSizeLitres ? ', '+ element.vehicle.badgeEngineSizeLitres + ' L ' : ''}</span><span>${element.vehicle.standard.drivetrain ? ', '+ element.vehicle.standard.drivetrain : ''}</span><span>${element.vehicle.transmissionType ? ', '+ element.vehicle.transmissionType : ''}</span><span>${element.advertiser.location.town ? ', '+ element.advertiser.location.town : ''}</span><span>${element.advertiser.location.region ? ', '+ element.advertiser.location.region : ''}</span><span>${element.advertiser.location.county ? ', '+ element.advertiser.location.county : ''}</span></div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="b-goods__price text-primary"><span class="b-goods__price-title">DEALER<br>PRICE</span><span class="b-goods__price-number">£ ${element.adverts.retailAdverts.totalPrice.amountGBP ?  element.adverts.retailAdverts.totalPrice.amountGBP : 'N/A'}</span></div>
+                            <div class="b-goods__price-msrp">MSRP ${element.adverts.retailAdverts.totalPrice.amountGBP ?  element.adverts.retailAdverts.totalPrice.amountGBP : 'N/A'}</div>
+                          </div>
+                        </div>
+                        <div class="b-goods-descrip row no-gutters">
+                          <div class="b-goods-descrip__item col">
+                            <div class="b-goods-descrip__inner">
+                              <div class="b-goods-descrip__wrap"><i class="ic flaticon-speedometer"></i><span class="b-goods-descrip__info"> 35,000 mi</span>
+                                <div class="b-goods-descrip__full-info"><span class="b-goods-descrip__title">MILEAGE</span><span class="b-goods-descrip__text">${element.vehicle.odometerReadingMiles ?  element.vehicle.odometerReadingMiles : 'N/A'}</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="b-goods-descrip__item col">
+                            <div class="b-goods-descrip__inner">
+                              <div class="b-goods-descrip__wrap"><i class="ic flaticon-fuel-station-pump"></i><span class="b-goods-descrip__info"> 38/45</span>
+                                <div class="b-goods-descrip__full-info"><span class="b-goods-descrip__title">FUEL TYPE</span><span class="b-goods-descrip__text">${element.vehicle.fuelType ?  element.vehicle.fuelType : 'N/A'}</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="b-goods-descrip__item col">
+                            <div class="b-goods-descrip__inner">
+                              <div class="b-goods-descrip__wrap"><i class="ic flaticon-gearshift"></i><span class="b-goods-descrip__info"> Semi-Auto</span>
+                                <div class="b-goods-descrip__full-info"><span class="b-goods-descrip__title">TRANSMISSION</span><span class="b-goods-descrip__text">${element.vehicle.transmissionType ?  element.vehicle.transmissionType : 'N/A'}</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="b-goods-descrip__item b-goods-descrip__item_list col">
+                            <div class="b-goods-descrip__inner">
+                              <div class="b-goods-descrip__wrap"><i class="ic flaticon-calendar"></i>
+                                <div class="b-goods-descrip__full-info"><span class="b-goods-descrip__title">YEAR</span><span class="b-goods-descrip__text">${element.vehicle.yearOfManufacture ?  element.vehicle.yearOfManufacture : 'N/A'}</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="b-goods__footer">
+                          <div class="row no-gutters justify-content-between">
+                            <div class="col-auto"></div>
+                            <div class="col-auto"><img class="b-goods__bnr" src="assets/media/content/b-goods/check.jpg" alt="photo"/><img class="b-goods__bnr" src="assets/media/content/b-goods/check-2.jpg" alt="photo"/></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  `);
+          });
+
+          // Calculate total number of pages
+          createPaginationButtons(responseData.last_page, responseData.current_page);
+
+        })
+        .catch(error => {
+          console.error("Fetch error:", error.message); // Display the error message
+        });
+}
+
+    stockList(); // Call the function with default page number 1
+
+    </script>
+  </body>
+</html>
