@@ -23,6 +23,6 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::get('stocks-data', [StockController::class, 'show']);
-    Route::get('stock-detail/{stockId}', [StockController::class, 'findStockDetail']);
-    Route::put('webhook', [WebhookController::class, 'update']);
+    Route::get('stock-detail/{searchId}', [StockController::class, 'findStockDetail']);
+    Route::put('webhook', [WebhookController::class, 'update'])->middleware('webhook.validation');;
 });

@@ -34,7 +34,7 @@ return [
     'autotrader' => [
         'api_key' => env('AUTOTRADER_API_KEY'),
         'api_secret' => env('AUTOTRADER_API_SECRET'),
-        'webhook_secret' => env('AUTOTRADER_WEBHOOK_SECRET'),
+        'webhook_secret' => env('AUTOTRADER_WEBHOOK_SECRET', 'sk_test_sampleGuid46546456'),
     ]
 
 ];

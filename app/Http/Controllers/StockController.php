@@ -27,9 +27,9 @@ class StockController extends Controller
         return response()->json($payload);
     }
 
-    public function findStockDetail($stockId)
+    public function findStockDetail($searchId)
     {
-        $payload = $this->stockService->findBy($stockId);
+        $payload = $this->stockService->findBy($searchId);
         return response()->json($payload);
     }
 }

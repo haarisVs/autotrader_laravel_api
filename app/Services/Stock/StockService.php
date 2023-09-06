@@ -21,9 +21,9 @@ class StockService
         return $this->stockRepository->findAllLocal();
     }
 
-    public function findBy($stockId)
+    public function findBy($searchId)
     {
-        return $this->stockRepository->findById($stockId);
+        return $this->stockRepository->findById($searchId);
     }
 
     public function update($payload)

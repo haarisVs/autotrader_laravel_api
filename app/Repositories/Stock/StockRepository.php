@@ -93,7 +93,14 @@ class StockRepository implements StockInterface
         $stock = Stock::where('stockId', $id)->first();
         if ($stock)
         {
-            $stock->update(['vehicle' => $attributes['data']['vehicle']]);
+            $stock->update(
+                [
+                'vehicle' => $attributes['data']['vehicle'],
+                'advertiser' => $attributes['data']['advertiser'],
+                'metadata' => $attributes['data']['metadata']
+                ]
+            );
+
             Log::info('Stock record updated successfully', ['stockId' => $id]);
             $response = [
                 'message' => 'Stock record updated successfully',
@@ -118,7 +125,7 @@ class StockRepository implements StockInterface
     public function findById($id)
     {
         // Find the stock record based on the given stockId
-        $stock = Stock::where('stockId', $id)->first();
+        $stock = Stock::where('searchId', $id)->first();
 
         if (!$stock) {
             return response()->json(['message' => 'Stock not found'], 404);
